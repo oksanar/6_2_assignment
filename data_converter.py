@@ -26,7 +26,7 @@ def convert_data(data: List[dict], format=METRIC_FORMAT):
           elif s.endswith(FOOT_SUFFIX):
                return (float(s[:-2]), ENGLISH_FORMAT)
           else:
-               raise ValueError('Invalid temperature format')
+               raise ValueError('Invalid distance format')
      for i in range(len(data)):
           row = data[i]
           _temperature = get_temperature(row[TEMPERATURE_KEY])
